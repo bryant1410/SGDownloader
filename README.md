@@ -10,7 +10,7 @@ You can use Block or Delegate for downloading the file. If you are using with Ta
 
 I put downloadManager demo with tableview cell. It's using delegate method for delete the tableviewcell.
 
-##How to use
+## How to use
 
 Put 
 
@@ -19,7 +19,7 @@ Put
 
 to your project.
 
-###for using Block
+### for using Block
 
 	SGdownloader *downloader = [[SGdownloader alloc] initWithURL:[NSURL URLWithString:@"http://myfile.com/file.jpg"] timeout:60];
 
@@ -38,7 +38,7 @@ to your project.
 	
 	}];
 	
-###for using Delegate
+### for using Delegate
 put SGdownloader delegate at .h file
 
 	@interface progressCell : UITableViewCell <SGdownloaderDelegate>
@@ -58,20 +58,20 @@ Delegate Methods are required
 	
 
 
-##Todo
+## Todo
 
 * allow 1-5 concurrent download for 1 file (like download manager)
 
-#Example
+# Example
 
 check downloadManager.xcodeproj . All the downloading images are using from google search result. It is using for testing purporse only.
 
-##Log
+## Log
 
-###Version 0.2
+### Version 0.2
  
  - Allow Pause and Resume
  
-###Version 0.1
+### Version 0.1
  
  - Allow Download with Progress
